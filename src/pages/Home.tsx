@@ -140,7 +140,7 @@ const Home = () => {
       </section>
       
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-b from-zarsom-navy/80 to-zarsom-navy">
+      <section className="py-20 bg-gradient-to-b from-zarsom-navy/80 to-zarsom-navy bg-yellow-600">
         <div className="container mx-auto px-4 text-center">
           <ScrollReveal>
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
