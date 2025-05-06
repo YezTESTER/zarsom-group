@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import ScrollReveal from "@/components/ScrollReveal";
 import ParallaxHero from "@/components/ParallaxHero";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -186,15 +187,15 @@ const About = () => {
       <section className="py-20 relative">
         {/* Background Image with Overlay */}
         <div 
-          className="absolute inset-0 bg-cover bg-center bg-fixed opacity-80" 
+          className="absolute inset-0 bg-cover bg-center bg-fixed" 
           style={{ 
             backgroundImage: "url('/lovable-uploads/e307c072-4ba0-4d75-b13c-12aef5f232df.png')",
             zIndex: 0
           }}
         />
         
-        {/* Background Gradient Overlay - Reducing opacity to show more of the background image */}
-        <div className="absolute inset-0 bg-gradient-to-b from-zarsom-navy/40 to-zarsom-navy/30" style={{ zIndex: 1 }}></div>
+        {/* Background Gradient Overlay - Much more transparent to show the image */}
+        <div className="absolute inset-0 bg-gradient-to-b from-zarsom-navy/20 to-zarsom-navy/20" style={{ zIndex: 1 }}></div>
         
         <div className="container mx-auto px-4 relative" style={{ zIndex: 2 }}>
           <ScrollReveal>
@@ -254,9 +255,11 @@ const About = () => {
           
           <ScrollReveal delay={600}>
             <div className="mt-16 text-center">
-              <Button className="hero-button bg-zarsom-teal text-white hover:bg-zarsom-teal/80">
-                Explore ZARFUEL Project
-              </Button>
+              <Link to="/zarfuel">
+                <Button className="hero-button bg-zarsom-teal text-white hover:bg-zarsom-teal/80">
+                  Explore ZARFUEL Project
+                </Button>
+              </Link>
             </div>
           </ScrollReveal>
         </div>

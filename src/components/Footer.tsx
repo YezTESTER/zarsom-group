@@ -8,11 +8,9 @@ const Footer = () => {
     { name: "Home", path: "/" },
     { name: "About Us", path: "/about" },
     { name: "ZARFUEL", path: "/zarfuel" },
-    { name: "Why It Matters", path: "/why-it-matters" },
-    { name: "Services", path: "/services" },
-    { name: "Team", path: "/team" },
-    { name: "Contact", path: "/contact" },
-    { name: "Legal", path: "/legal" }
+    { name: "News", path: "/news" },
+    { name: "Careers", path: "/careers" },
+    { name: "Contact", path: "/contact" }
   ];
 
   return (
