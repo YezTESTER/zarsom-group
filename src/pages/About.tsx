@@ -190,9 +190,9 @@ const About = () => {
       }} />
         
         {/* Background Gradient Overlay - Much more transparent to show the image */}
-        <div className="absolute inset-0 bg-gradient-to-b from-zarsom-navy/20 to-zarsom-navy/20" style={{
+        <div style={{
         zIndex: 1
-      }}></div>
+      }} className="absolute inset-0 bg-gradient-to-b from-zarsom-navy/20 to-zarsom-navy/20 bg-transparent px-100 py-0"></div>
         
         <div className="container mx-auto px-4 relative" style={{
         zIndex: 2
