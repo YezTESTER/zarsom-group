@@ -49,7 +49,7 @@ const Home = () => {
                   ZARSOM Group's Initiative & Flagship Project
                 </h2>
                 <div className="text-gray-300 space-y-4">
-                  <p>
+                  <p className="px-[2px] my-0">
                     ZARFUEL is a multi-million-rand, state-of-the-art truck stop initiative built on 3.4 – 5 ha of prime N2 land at Umkomaas, delivered through a landmark partnership with SAPPI Saiccor in 2025. Slated to serve 360+ trucks daily and create 70+ permanent jobs, it combines:
                   </p>
                   <ul className="list-disc pl-5 space-y-2">
@@ -75,10 +75,10 @@ const Home = () => {
       </section>
       
       {/* Key Highlights */}
-      <section className="py-20 bg-gradient-to-b from-zarsom-navy/90 to-zarsom-navy/80">
+      <section className="bg-gradient-to-b from-zarsom-navy/90 to-zarsom-navy/80 py-[28px] bg-cyan-950">
         <div className="container mx-auto px-4">
           <ScrollReveal>
-            <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-12">
+            <h2 className="text-3xl font-bold text-white text-center mb-12 md:text-5xl">
               Key Highlights
             </h2>
           </ScrollReveal>
@@ -128,7 +128,7 @@ const Home = () => {
       </section>
       
       {/* Stats Bar */}
-      <section className="py-16 bg-zarsom-teal">
+      <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             <CounterCard title="Logistics on N2 Daily" value={1000} suffix="+" delayMs={0} />
