@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
@@ -20,11 +19,8 @@ const Navbar = () => {
     { name: "Home", path: "/" },
     { name: "About Us", path: "/about" },
     { name: "ZARFUEL", path: "/zarfuel" },
-    { name: "Why It Matters", path: "/why-it-matters" },
-    { name: "Services", path: "/services" },
     { name: "Team", path: "/team" },
-    { name: "Contact", path: "/contact" },
-    { name: "Legal", path: "/legal" }
+    { name: "Contact", path: "/contact" }
   ];
 
   return (

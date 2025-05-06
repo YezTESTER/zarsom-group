@@ -185,7 +185,7 @@ const About = () => {
       <section className="py-20 relative">
         {/* Background Image with Overlay */}
         <div 
-          className="absolute inset-0 bg-cover bg-center bg-fixed opacity-20" 
+          className="absolute inset-0 bg-cover bg-center bg-fixed opacity-40" 
           style={{ 
             backgroundImage: "url('/lovable-uploads/e307c072-4ba0-4d75-b13c-12aef5f232df.png')",
             zIndex: 0
@@ -193,7 +193,7 @@ const About = () => {
         />
         
         {/* Background Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-zarsom-navy/70 to-zarsom-navy/60" style={{ zIndex: 1 }}></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-zarsom-navy/60 to-zarsom-navy/50" style={{ zIndex: 1 }}></div>
         
         <div className="container mx-auto px-4 relative" style={{ zIndex: 2 }}>
           <ScrollReveal>
