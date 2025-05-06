@@ -26,7 +26,7 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <ScrollReveal>
               <div className="rounded-xl overflow-hidden shadow-xl">
-                <img alt="ZARSOM Truck on Highway" className="w-full h-auto rounded-xl transform hover:scale-105 transition-transform duration-500" src="/lovable-uploads/958b10f8-676c-48a0-8766-26b6b07faef4.jpg" />
+                <img alt="ZARSOM Truck on Highway" src="/lovable-uploads/958b10f8-676c-48a0-8766-26b6b07faef4.jpg" className="w-full h-auto rounded-xl transform hover:scale-105 transition-transform duration-500 object-scale-down" />
               </div>
             </ScrollReveal>
             
@@ -51,7 +51,7 @@ const About = () => {
       </section>
       
       {/* Our Founders */}
-      <section className="py-20 bg-gradient-to-b from-zarsom-navy/90 to-zarsom-navy/80">
+      <section className="bg-gradient-to-b from-zarsom-navy/90 to-zarsom-navy/80 py-[29px]">
         <div className="container mx-auto px-4">
           <ScrollReveal>
             <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-12">The Founders</h2>
@@ -59,7 +59,7 @@ const About = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <ScrollReveal delay={200}>
-              <div className="bg-white/5 backdrop-blur-sm p-8 rounded-xl border border-white/10 hover:border-zarsom-teal/50 transition-all duration-300 hover-lift h-full">
+              <div className="bg-white/5 backdrop-blur-sm p-8 rounded-xl border border-white/10 hover:border-zarsom-teal/50 transition-all duration-300 hover-lift h-full px-[50px] mx-[21px]">
                 <div className="flex items-start gap-4 mb-4">
                   <Avatar className="h-20 w-20 border-2 border-zarsom-teal">
                     <AvatarImage src="/public/lovable-uploads/0d4fdd2d-1279-4df3-99fa-9191ecdab99c.png" alt="Bathuthukile Mchunu" />
@@ -76,7 +76,7 @@ const About = () => {
             </ScrollReveal>
             
             <ScrollReveal delay={400}>
-              <div className="bg-white/5 backdrop-blur-sm p-8 rounded-xl border border-white/10 hover:border-zarsom-teal/50 transition-all duration-300 hover-lift h-full">
+              <div className="bg-white/5 backdrop-blur-sm p-8 rounded-xl border border-white/10 hover:border-zarsom-teal/50 transition-all duration-300 hover-lift h-full mx-[21px] px-[51px]">
                 <div className="flex items-start gap-4 mb-4">
                   <Avatar className="h-20 w-20 border-2 border-zarsom-teal">
                     <AvatarImage src="/public/lovable-uploads/e3c665d7-bff3-480b-9cb8-f30ed0558799.png" alt="Azande Mchunu" />
