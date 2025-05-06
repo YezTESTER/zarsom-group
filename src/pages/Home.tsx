@@ -40,7 +40,7 @@ const Home = () => {
       </ParallaxHero>
       
       {/* ZARSOM Group Initiative */}
-      <section className="py-20 bg-gradient-to-b from-zarsom-navy to-zarsom-navy/90">
+      <section className="py-20 bg-gradient-to-b from-zarsom-navy to-zarsom-navy/90 bg-transparent">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <ScrollReveal>
