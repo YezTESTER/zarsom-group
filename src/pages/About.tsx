@@ -1,23 +1,19 @@
-
 import { useRef, useEffect, useState } from "react";
 import { Calendar, Award, Star, RotateCw, TrendingUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import ScrollReveal from "@/components/ScrollReveal";
 import ParallaxHero from "@/components/ParallaxHero";
-
 const About = () => {
-  return (
-    <div className="min-h-screen pt-20">
+  return <div className="min-h-screen pt-20">
       {/* Hero Section */}
-      <ParallaxHero 
-        imageSrc="/public/lovable-uploads/142af31d-4530-4df1-981e-e42f80a8f57b.png"
-        height="h-[60vh]"
-      >
+      <ParallaxHero imageSrc="/public/lovable-uploads/142af31d-4530-4df1-981e-e42f80a8f57b.png" height="h-[60vh]">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 animate-fade-in">
             About <span className="text-zarsom-teal">ZARSOM Group</span>
           </h1>
-          <p className="text-xl text-gray-200 mb-8 animate-fade-in" style={{ animationDelay: "300ms" }}>
+          <p className="text-xl text-gray-200 mb-8 animate-fade-in" style={{
+          animationDelay: "300ms"
+        }}>
             Our vision, our journey, and the passion that drives us forward.
           </p>
         </div>
@@ -31,19 +27,11 @@ const About = () => {
               <div className="grid grid-cols-1 gap-6">
                 <div className="relative">
                   <div className="absolute inset-0 bg-zarsom-teal/20 rounded-lg transform translate-x-3 translate-y-3"></div>
-                  <img 
-                    src="/public/lovable-uploads/2a585d01-2819-4080-b2c7-8c8fc7b53cbb.png" 
-                    alt="Azande Mchunu" 
-                    className="rounded-lg shadow-xl relative z-10 w-full h-auto"
-                  />
+                  <img src="/public/lovable-uploads/2a585d01-2819-4080-b2c7-8c8fc7b53cbb.png" alt="Azande Mchunu" className="rounded-lg shadow-xl relative z-10 w-full h-auto" />
                 </div>
                 <div className="relative">
                   <div className="absolute inset-0 bg-zarsom-teal/20 rounded-lg transform translate-x-3 translate-y-3"></div>
-                  <img 
-                    src="/public/lovable-uploads/afb00cd9-80ee-4f4f-bd2d-bad0558efde7.png" 
-                    alt="Bathuthukile Mchunu" 
-                    className="rounded-lg shadow-xl relative z-10 w-full h-auto"
-                  />
+                  <img src="/public/lovable-uploads/afb00cd9-80ee-4f4f-bd2d-bad0558efde7.png" alt="Bathuthukile Mchunu" className="rounded-lg shadow-xl relative z-10 w-full h-auto" />
                 </div>
               </div>
             </ScrollReveal>
@@ -204,48 +192,23 @@ const About = () => {
             {/* Timeline Items */}
             <div className="space-y-12">
               <ScrollReveal>
-                <TimelineItem 
-                  year="2018–19" 
-                  title="ZARSOM Begins"
-                  description="Mobile canteen launch for SAMA & catering for Classen Aurett; major enterprise funding"
-                  isLeft={true}
-                />
+                <TimelineItem year="2018–19" title="ZARSOM Begins" description="Mobile canteen launch for SAMA & catering for Classen Aurett; major enterprise funding" isLeft={true} />
               </ScrollReveal>
               
               <ScrollReveal delay={200}>
-                <TimelineItem 
-                  year="2021" 
-                  title="Strategic Pivot"
-                  description="Pivot to delivery solutions (GO Scoot!) to address logistical gaps in the market"
-                  isLeft={false}
-                />
+                <TimelineItem year="2021" title="Strategic Pivot" description="Pivot to delivery solutions (GO Scoot!) to address logistical gaps in the market" isLeft={false} />
               </ScrollReveal>
               
               <ScrollReveal delay={400}>
-                <TimelineItem 
-                  year="2022–23" 
-                  title="Growth & Recognition"
-                  description="Media features (Competition Commission, SABC); Presidential catering contracts"
-                  isLeft={true}
-                />
+                <TimelineItem year="2022–23" title="Growth & Recognition" description="Media features (Competition Commission, SABC); Presidential catering contracts" isLeft={true} />
               </ScrollReveal>
               
               <ScrollReveal delay={600}>
-                <TimelineItem 
-                  year="2024" 
-                  title="Expansion"
-                  description="Win Rosebank College contract, establishing a firm foothold in the educational sector"
-                  isLeft={false}
-                />
+                <TimelineItem year="2024" title="Expansion" description="Win Rosebank College contract, establishing a firm foothold in the educational sector" isLeft={false} />
               </ScrollReveal>
               
               <ScrollReveal delay={800}>
-                <TimelineItem 
-                  year="2025" 
-                  title="ZARFUEL Launch"
-                  description="Secure SAPPI land lease for ZARFUEL, initiating our flagship infrastructure project"
-                  isLeft={true}
-                />
+                <TimelineItem year="2025" title="ZARFUEL Launch" description="Secure SAPPI land lease for ZARFUEL, initiating our flagship infrastructure project" isLeft={true} />
               </ScrollReveal>
             </div>
           </div>
@@ -254,28 +217,20 @@ const About = () => {
       
       {/* Mission & Vision */}
       <section className="py-20 bg-gradient-to-b from-zarsom-navy/60 to-zarsom-navy">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 bg-slate-50">
           <ScrollReveal>
-            <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-12">
+            <h2 className="text-3xl font-bold text-center mb-12 text-slate-950 py-[23px] md:text-5xl">
               Mission & Vision
             </h2>
           </ScrollReveal>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <ScrollReveal delay={200}>
-              <MissionVisionCard 
-                title="Our Mission"
-                description="Empower communities by creating jobs, developing skills, and driving sustainable growth through innovative infrastructure and service solutions."
-                bgClass="bg-gradient-to-br from-zarsom-navy/80 to-zarsom-teal/30"
-              />
+              <MissionVisionCard title="Our Mission" description="Empower communities by creating jobs, developing skills, and driving sustainable growth through innovative infrastructure and service solutions." bgClass="bg-gradient-to-br from-zarsom-navy/80 to-zarsom-teal/30" />
             </ScrollReveal>
             
             <ScrollReveal delay={400}>
-              <MissionVisionCard 
-                title="Our Vision"
-                description="Lead South African development with legacy enterprises that transform regions, create sustainable employment, and build generational prosperity."
-                bgClass="bg-gradient-to-br from-zarsom-teal/30 to-zarsom-navy/80"
-              />
+              <MissionVisionCard title="Our Vision" description="Lead South African development with legacy enterprises that transform regions, create sustainable employment, and build generational prosperity." bgClass="bg-gradient-to-br from-zarsom-teal/30 to-zarsom-navy/80" />
             </ScrollReveal>
           </div>
           
@@ -288,20 +243,21 @@ const About = () => {
           </ScrollReveal>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 interface TimelineItemProps {
   year: string;
   title: string;
   description: string;
   isLeft: boolean;
 }
-
-const TimelineItem = ({ year, title, description, isLeft }: TimelineItemProps) => {
-  return (
-    <div className={`flex items-center ${isLeft ? 'md:flex-row' : 'md:flex-row-reverse'} flex-col`}>
+const TimelineItem = ({
+  year,
+  title,
+  description,
+  isLeft
+}: TimelineItemProps) => {
+  return <div className={`flex items-center ${isLeft ? 'md:flex-row' : 'md:flex-row-reverse'} flex-col`}>
       <div className={`md:w-1/2 w-full ${isLeft ? 'md:pr-12 md:text-right' : 'md:pl-12'} pb-10 md:pb-0`}>
         <div className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10 hover-lift">
           <div className="text-zarsom-teal font-bold text-xl mb-2">{year}</div>
@@ -313,35 +269,29 @@ const TimelineItem = ({ year, title, description, isLeft }: TimelineItemProps) =
       <div className="md:w-0 w-px h-10 md:h-0 bg-zarsom-teal/50 md:hidden"></div>
       
       <div className="flex items-center justify-center w-10 h-10 rounded-full bg-zarsom-teal border-4 border-zarsom-navy absolute left-[-5px] md:left-1/2 md:transform md:translate-x-[-50%]"></div>
-    </div>
-  );
+    </div>;
 };
-
 interface MissionVisionCardProps {
   title: string;
   description: string;
   bgClass: string;
 }
-
-const MissionVisionCard = ({ title, description, bgClass }: MissionVisionCardProps) => {
+const MissionVisionCard = ({
+  title,
+  description,
+  bgClass
+}: MissionVisionCardProps) => {
   const [isFlipped, setIsFlipped] = useState(false);
-  
-  return (
-    <div 
-      className="h-[300px] perspective-1000 cursor-pointer"
-      onClick={() => setIsFlipped(!isFlipped)}
-    >
+  return <div className="h-[300px] perspective-1000 cursor-pointer" onClick={() => setIsFlipped(!isFlipped)}>
       <div className={`relative w-full h-full transition-transform duration-700 transform-style-3d ${isFlipped ? 'rotate-y-180' : ''}`}>
         <div className={`absolute w-full h-full backface-hidden ${bgClass} rounded-xl p-8 flex items-center justify-center shadow-xl`}>
           <h3 className="text-3xl font-bold text-white">{title}</h3>
         </div>
         
-        <div className="absolute w-full h-full backface-hidden bg-zarsom-teal/20 backdrop-blur-md rounded-xl p-8 flex items-center justify-center shadow-xl rotate-y-180">
+        <div className="absolute w-full h-full backface-hidden backdrop-blur-md rounded-xl p-8 flex items-center justify-center shadow-xl rotate-y-180 bg-cyan-950">
           <p className="text-xl text-white">{description}</p>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default About;
