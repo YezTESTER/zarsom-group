@@ -1,35 +1,48 @@
-
 import { Link } from "react-router-dom";
 import { useTheme } from "@/context/ThemeContext";
 import { Moon, Sun, Facebook, Linkedin, Instagram, Twitter } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
 const Footer = () => {
-  const { theme, toggleTheme } = useTheme();
-  
-  const navLinks = [
-    { name: "Home", path: "/" },
-    { name: "About Us", path: "/about" },
-    { name: "ZARFUEL", path: "/zarfuel" },
-    { name: "Why It Matters", path: "/why-it-matters" },
-    { name: "Services", path: "/services" },
-    { name: "Team", path: "/team" },
-    { name: "Contact", path: "/contact" },
-    { name: "News", path: "/news" },
-    { name: "Careers", path: "/careers" },
-    { name: "Legal", path: "/legal" },
-  ];
-  
-  return (
-    <footer className="bg-zarsom-navy text-white py-12">
+  const {
+    theme,
+    toggleTheme
+  } = useTheme();
+  const navLinks = [{
+    name: "Home",
+    path: "/"
+  }, {
+    name: "About Us",
+    path: "/about"
+  }, {
+    name: "ZARFUEL",
+    path: "/zarfuel"
+  }, {
+    name: "Why It Matters",
+    path: "/why-it-matters"
+  }, {
+    name: "Services",
+    path: "/services"
+  }, {
+    name: "Team",
+    path: "/team"
+  }, {
+    name: "Contact",
+    path: "/contact"
+  }, {
+    name: "News",
+    path: "/news"
+  }, {
+    name: "Careers",
+    path: "/careers"
+  }, {
+    name: "Legal",
+    path: "/legal"
+  }];
+  return <footer className="bg-zarsom-navy text-white py-12">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="md:col-span-1">
-            <img 
-              src="/public/lovable-uploads/c928a41d-5cbc-48bb-ada7-8a543056f2dc.png" 
-              alt="ZARSOM Group Logo" 
-              className="h-16 mb-4"
-            />
+            <img alt="ZARSOM Group Logo" className="h-16 mb-4" src="/lovable-uploads/8968f7bd-c9f7-4537-aa72-c9a93c3a2b33.png" />
             <p className="text-gray-300 mb-4">Fueling Progress. Nourishing Communities.</p>
             <div className="flex items-center space-x-2">
               <Button variant="outline" size="icon" className="rounded-full border-zarsom-teal text-zarsom-teal hover:bg-zarsom-teal hover:text-white">
@@ -50,15 +63,9 @@ const Footer = () => {
           <div className="md:col-span-2">
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
-              {navLinks.map((link) => (
-                <Link 
-                  key={link.name} 
-                  to={link.path}
-                  className="text-gray-300 hover:text-zarsom-teal transition-colors"
-                >
+              {navLinks.map(link => <Link key={link.name} to={link.path} className="text-gray-300 hover:text-zarsom-teal transition-colors">
                   {link.name}
-                </Link>
-              ))}
+                </Link>)}
             </div>
           </div>
           
@@ -70,17 +77,8 @@ const Footer = () => {
               <p>Address: 53 Aquileia Ave, Widenham, Umkomaas, 4170</p>
               <div className="flex items-center mt-4">
                 <span className="mr-2">Mode:</span>
-                <Button 
-                  variant="outline" 
-                  size="sm" 
-                  onClick={toggleTheme}
-                  className="text-zarsom-teal border-zarsom-teal hover:bg-zarsom-teal hover:text-white"
-                >
-                  {theme === "dark" ? (
-                    <><Sun className="h-4 w-4 mr-2" /> Light Mode</>
-                  ) : (
-                    <><Moon className="h-4 w-4 mr-2" /> Dark Mode</>
-                  )}
+                <Button variant="outline" size="sm" onClick={toggleTheme} className="text-zarsom-teal border-zarsom-teal hover:bg-zarsom-teal hover:text-white">
+                  {theme === "dark" ? <><Sun className="h-4 w-4 mr-2" /> Light Mode</> : <><Moon className="h-4 w-4 mr-2" /> Dark Mode</>}
                 </Button>
               </div>
             </div>
@@ -91,8 +89,6 @@ const Footer = () => {
           <p>&copy; {new Date().getFullYear()} ZARSOM Group. All rights reserved.</p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
