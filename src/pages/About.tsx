@@ -3,10 +3,12 @@ import { Calendar, Award, Star, RotateCw, TrendingUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import ScrollReveal from "@/components/ScrollReveal";
 import ParallaxHero from "@/components/ParallaxHero";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+
 const About = () => {
   return <div className="min-h-screen pt-20">
       {/* Hero Section */}
-      <ParallaxHero imageSrc="/public/lovable-uploads/142af31d-4530-4df1-981e-e42f80a8f57b.png" height="h-[60vh]">
+      <ParallaxHero imageSrc="/public/lovable-uploads/6b626058-2a08-4161-8f11-754bda7f0cbd.png" height="h-[60vh]">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 animate-fade-in">
             About <span className="text-zarsom-teal">ZARSOM Group</span>
@@ -24,7 +26,13 @@ const About = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <ScrollReveal>
-              
+              <div className="rounded-xl overflow-hidden shadow-xl">
+                <img 
+                  src="/public/lovable-uploads/dbf7f010-b9e6-486b-9d3e-6a1ec604f45a.png" 
+                  alt="ZARSOM Truck on Highway" 
+                  className="w-full h-auto rounded-xl transform hover:scale-105 transition-transform duration-500"
+                />
+              </div>
             </ScrollReveal>
             
             <ScrollReveal delay={300}>
@@ -57,22 +65,34 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <ScrollReveal delay={200}>
               <div className="bg-white/5 backdrop-blur-sm p-8 rounded-xl border border-white/10 hover:border-zarsom-teal/50 transition-all duration-300 hover-lift h-full">
-                <h3 className="text-2xl font-bold text-white mb-4">Azande Mchunu • Co-Founder & Director</h3>
+                <div className="flex items-start gap-4 mb-4">
+                  <Avatar className="h-20 w-20 border-2 border-zarsom-teal">
+                    <AvatarImage src="/public/lovable-uploads/0d4fdd2d-1279-4df3-99fa-9191ecdab99c.png" alt="Bathuthukile Mchunu" />
+                    <AvatarFallback>BM</AvatarFallback>
+                  </Avatar>
+                  <h3 className="text-2xl font-bold text-white">Bathuthukile Mchunu • Co-Founder & CEO</h3>
+                </div>
                 <ul className="list-disc pl-5 space-y-3 text-gray-300">
-                  <li>Created the ZARFUEL initiative to solve SAPPI Saiccor's logistical difficulty in 2021, securing 3.4 – 5 ha for ZARFUEL in 2025.</li>
-                  <li>Secured critical funds from NYDA, SAFA & SEDA, enabling venture scaling.</li>
-                  <li>Drives strategic vision across infrastructure, retail, and community projects.</li>
+                  <li>Built service excellence—from SAMA mobile canteens to Rosebank College catering.</li>
+                  <li>Champions brand growth for HerCakes® and curated delivery initiatives.</li>
+                  <li>Leads operations, staff development, and quality assurance.</li>
                 </ul>
               </div>
             </ScrollReveal>
             
             <ScrollReveal delay={400}>
               <div className="bg-white/5 backdrop-blur-sm p-8 rounded-xl border border-white/10 hover:border-zarsom-teal/50 transition-all duration-300 hover-lift h-full">
-                <h3 className="text-2xl font-bold text-white mb-4">Bathuthukile Mchunu • Co-Founder & CEO</h3>
+                <div className="flex items-start gap-4 mb-4">
+                  <Avatar className="h-20 w-20 border-2 border-zarsom-teal">
+                    <AvatarImage src="/public/lovable-uploads/e3c665d7-bff3-480b-9cb8-f30ed0558799.png" alt="Azande Mchunu" />
+                    <AvatarFallback>AM</AvatarFallback>
+                  </Avatar>
+                  <h3 className="text-2xl font-bold text-white">Azande Mchunu • Co-Founder & Director</h3>
+                </div>
                 <ul className="list-disc pl-5 space-y-3 text-gray-300">
-                  <li>Built service excellence—from SAMA mobile canteens to Rosebank College catering.</li>
-                  <li>Champions brand growth for HerCakes® and curated delivery initiatives.</li>
-                  <li>Leads operations, staff development, and quality assurance.</li>
+                  <li>Created the ZARFUEL initiative to solve SAPPI Saiccor's logistical difficulty in 2021, securing 3.4 – 5 ha for ZARFUEL in 2025.</li>
+                  <li>Secured critical funds from NYDA, SAFA & SEDA, enabling venture scaling.</li>
+                  <li>Drives strategic vision across infrastructure, retail, and community projects.</li>
                 </ul>
               </div>
             </ScrollReveal>
