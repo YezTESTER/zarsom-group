@@ -10,6 +10,7 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Zarfuel from "./pages/Zarfuel";
+import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -26,6 +27,7 @@ const App = () => (
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/zarfuel" element={<Zarfuel />} />
+            <Route path="/contact" element={<Contact />} />
             {/* Additional routes to be added later */}
             <Route path="*" element={<NotFound />} />
           </Routes>

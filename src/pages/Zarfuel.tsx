@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Droplet, ShieldCheck, Home, Waves, ShoppingBag, ChevronDown, ChevronUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import ParallaxHero from "@/components/ParallaxHero";
 import AnimatedFeature from "@/components/AnimatedFeature";
 import CounterCard from "@/components/CounterCard";
@@ -9,9 +10,9 @@ import ScrollReveal from "@/components/ScrollReveal";
 const Zarfuel = () => {
   return (
     <div className="min-h-screen pt-20">
-      {/* Hero Section */}
+      {/* Hero Section - Updated with the new image */}
       <ParallaxHero 
-        imageSrc="/public/lovable-uploads/dea71d14-a0f0-4a83-9bef-cd6ce0e40dd0.png"
+        imageSrc="/lovable-uploads/32ce3b9c-c64c-45cd-9fcc-5dacf3308052.png"
         height="h-[60vh]"
       >
         <div className="max-w-4xl mx-auto text-center">
@@ -150,7 +151,7 @@ const Zarfuel = () => {
         </div>
       </section>
       
-      {/* Why Truck Stops Matter */}
+      {/* Why Truck Stops Matter - Redesigned */}
       <section className="py-20 bg-gradient-to-b from-zarsom-navy/70 to-zarsom-navy/80">
         <div className="container mx-auto px-4">
           <ScrollReveal>
@@ -159,7 +160,7 @@ const Zarfuel = () => {
             </h2>
           </ScrollReveal>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <ScrollReveal delay={100}>
               <div className="bg-white/5 backdrop-blur-sm p-8 rounded-xl border border-white/10 hover-lift h-full">
                 <h3 className="text-2xl font-bold text-zarsom-teal mb-4">National Context</h3>
@@ -179,14 +180,6 @@ const Zarfuel = () => {
                   <li>Projected 10–15% annual freight growth ensures rising throughput.</li>
                   <li>Truck stop industry primed for billion-rand expansions in SA's expanding logistics network.</li>
                 </ul>
-              </div>
-            </ScrollReveal>
-            
-            <ScrollReveal delay={500}>
-              <div className="bg-white/5 backdrop-blur-sm p-8 rounded-xl border border-white/10 hover-lift h-full flex items-center justify-center">
-                <Button className="hero-button bg-zarsom-teal text-white hover:bg-zarsom-teal/80 py-8 px-8 text-lg">
-                  Learn More
-                </Button>
               </div>
             </ScrollReveal>
           </div>
@@ -227,9 +220,11 @@ const Zarfuel = () => {
           
           <ScrollReveal delay={700}>
             <div className="mt-16 text-center">
-              <Button className="hero-button bg-zarsom-teal text-white hover:bg-zarsom-teal/80">
-                Contact Us About ZARFUEL
-              </Button>
+              <Link to="/contact">
+                <Button className="hero-button bg-zarsom-teal text-white hover:bg-zarsom-teal/80">
+                  Contact Us About ZARFUEL
+                </Button>
+              </Link>
             </div>
           </ScrollReveal>
         </div>
