@@ -1,25 +1,34 @@
+
 import { Link } from "react-router-dom";
 import { ChevronRight, Truck, Users, Map, TrendingUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import ParallaxHero from "@/components/ParallaxHero";
 import CounterCard from "@/components/CounterCard";
 import ScrollReveal from "@/components/ScrollReveal";
+
 const Home = () => {
-  return <div className="min-h-screen">
+  return (
+    <div className="min-h-screen">
       {/* Hero Section */}
-      <ParallaxHero imageSrc="/public/lovable-uploads/142af31d-4530-4df1-981e-e42f80a8f57b.png">
+      <ParallaxHero imageSrc="/lovable-uploads/fd2a7bba-69de-44f3-8187-d3450202933e.png">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 animate-fade-in">
             Fueling Progress. <span className="text-zarsom-teal">Nourishing Communities.</span>
           </h1>
-          <p className="text-xl text-gray-200 mb-8 animate-fade-in" style={{
-          animationDelay: "300ms"
-        }}>
+          <p
+            className="text-xl text-gray-200 mb-8 animate-fade-in"
+            style={{
+              animationDelay: "300ms"
+            }}
+          >
             Discover ZARFUEL, a next-generation truck stop by ZARSOM Group—designed to power South Africa's freight backbone and uplift local communities.
           </p>
-          <div className="flex flex-wrap justify-center gap-4 animate-fade-in" style={{
-          animationDelay: "600ms"
-        }}>
+          <div
+            className="flex flex-wrap justify-center gap-4 animate-fade-in"
+            style={{
+              animationDelay: "600ms"
+            }}
+          >
             <Link to="/zarfuel">
               <Button className="hero-button bg-zarsom-teal text-white hover:bg-zarsom-teal/80">
                 Learn About ZARFUEL <ChevronRight className="ml-2 h-4 w-4" />
@@ -164,6 +173,8 @@ const Home = () => {
           </ScrollReveal>
         </div>
       </section>
-    </div>;
+    </div>
+  );
 };
+
 export default Home;
