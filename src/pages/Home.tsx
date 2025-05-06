@@ -1,24 +1,25 @@
-
 import { Link } from "react-router-dom";
 import { ChevronRight, Truck, Users, Map, TrendingUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import ParallaxHero from "@/components/ParallaxHero";
 import CounterCard from "@/components/CounterCard";
 import ScrollReveal from "@/components/ScrollReveal";
-
 const Home = () => {
-  return (
-    <div className="min-h-screen">
+  return <div className="min-h-screen">
       {/* Hero Section */}
       <ParallaxHero imageSrc="/public/lovable-uploads/142af31d-4530-4df1-981e-e42f80a8f57b.png">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 animate-fade-in">
             Fueling Progress. <span className="text-zarsom-teal">Nourishing Communities.</span>
           </h1>
-          <p className="text-xl text-gray-200 mb-8 animate-fade-in" style={{ animationDelay: "300ms" }}>
+          <p className="text-xl text-gray-200 mb-8 animate-fade-in" style={{
+          animationDelay: "300ms"
+        }}>
             Discover ZARFUEL, a next-generation truck stop by ZARSOM Group—designed to power South Africa's freight backbone and uplift local communities.
           </p>
-          <div className="flex flex-wrap justify-center gap-4 animate-fade-in" style={{ animationDelay: "600ms" }}>
+          <div className="flex flex-wrap justify-center gap-4 animate-fade-in" style={{
+          animationDelay: "600ms"
+        }}>
             <Link to="/zarfuel">
               <Button className="hero-button bg-zarsom-teal text-white hover:bg-zarsom-teal/80">
                 Learn About ZARFUEL <ChevronRight className="ml-2 h-4 w-4" />
@@ -55,7 +56,7 @@ const Home = () => {
                     <li>High-speed fuel services</li>
                     <li>Secure parking (100+ bays)</li>
                     <li>Driver amenities (showers, lounges, truck wash)</li>
-                    <li>Future retail & warehousing</li>
+                    <li className="rounded-none">Future retail & warehousing</li>
                   </ul>
                   <p>
                     Founded by sisters Azande and Bathuthukile Mchunu—two black female entrepreneurs who overcame adversity to spearhead this venture—ZARFUEL exemplifies ZARSOM Group's commitment to regional growth. With truck stops powering 80% of South African freight and the logistics sector contributing ~6.5% of GDP, ZARFUEL aims to capture this opportunity, enhance road safety, and stimulate local commerce over the coming years.
@@ -66,11 +67,7 @@ const Home = () => {
             <ScrollReveal delay={300}>
               <div className="relative">
                 <div className="absolute inset-0 bg-zarsom-teal/20 rounded-lg transform translate-x-4 translate-y-4"></div>
-                <img 
-                  src="/public/lovable-uploads/dea71d14-a0f0-4a83-9bef-cd6ce0e40dd0.png" 
-                  alt="ZARFUEL Render" 
-                  className="rounded-lg shadow-xl relative z-10 w-full h-auto"
-                />
+                <img alt="ZARFUEL Render" className="rounded-lg shadow-xl relative z-10 w-full h-auto" src="/lovable-uploads/2b6dfece-a7b8-4156-819c-5cc82438f853.jpg" />
               </div>
             </ScrollReveal>
           </div>
@@ -134,30 +131,10 @@ const Home = () => {
       <section className="py-16 bg-zarsom-teal">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            <CounterCard 
-              title="Logistics on N2 Daily" 
-              value={1000} 
-              suffix="+" 
-              delayMs={0} 
-            />
-            <CounterCard 
-              title="Freight Road Share" 
-              value={80} 
-              suffix="%" 
-              delayMs={200} 
-            />
-            <CounterCard 
-              title="Logistics GDP Contribution" 
-              value={6.5} 
-              suffix="%" 
-              delayMs={400} 
-            />
-            <CounterCard 
-              title="Projected CAGR to 2030" 
-              value={6.24} 
-              suffix="%" 
-              delayMs={600} 
-            />
+            <CounterCard title="Logistics on N2 Daily" value={1000} suffix="+" delayMs={0} />
+            <CounterCard title="Freight Road Share" value={80} suffix="%" delayMs={200} />
+            <CounterCard title="Logistics GDP Contribution" value={6.5} suffix="%" delayMs={400} />
+            <CounterCard title="Projected CAGR to 2030" value={6.24} suffix="%" delayMs={600} />
           </div>
         </div>
       </section>
@@ -187,8 +164,6 @@ const Home = () => {
           </ScrollReveal>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default Home;
