@@ -4,7 +4,6 @@ import { Button } from "@/components/ui/button";
 import ScrollReveal from "@/components/ScrollReveal";
 import ParallaxHero from "@/components/ParallaxHero";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
-
 const About = () => {
   return <div className="min-h-screen pt-20">
       {/* Hero Section */}
@@ -27,11 +26,7 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <ScrollReveal>
               <div className="rounded-xl overflow-hidden shadow-xl">
-                <img 
-                  src="/public/lovable-uploads/dbf7f010-b9e6-486b-9d3e-6a1ec604f45a.png" 
-                  alt="ZARSOM Truck on Highway" 
-                  className="w-full h-auto rounded-xl transform hover:scale-105 transition-transform duration-500"
-                />
+                <img alt="ZARSOM Truck on Highway" className="w-full h-auto rounded-xl transform hover:scale-105 transition-transform duration-500" src="/lovable-uploads/958b10f8-676c-48a0-8766-26b6b07faef4.jpg" />
               </div>
             </ScrollReveal>
             
