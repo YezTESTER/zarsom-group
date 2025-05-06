@@ -5,10 +5,8 @@ import ScrollReveal from "@/components/ScrollReveal";
 import ParallaxHero from "@/components/ParallaxHero";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Link } from "react-router-dom";
-
 const About = () => {
-  return (
-    <div className="min-h-screen pt-20">
+  return <div className="min-h-screen pt-20">
       {/* Hero Section */}
       <ParallaxHero imageSrc="/public/lovable-uploads/6b626058-2a08-4161-8f11-754bda7f0cbd.png" height="h-[60vh]">
         <div className="max-w-4xl mx-auto text-center">
@@ -186,18 +184,19 @@ const About = () => {
       {/* Our Journey Timeline */}
       <section className="py-20 relative">
         {/* Background Image with Overlay */}
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-fixed" 
-          style={{ 
-            backgroundImage: "url('/lovable-uploads/e307c072-4ba0-4d75-b13c-12aef5f232df.png')",
-            zIndex: 0
-          }}
-        />
+        <div className="absolute inset-0 bg-cover bg-center bg-fixed" style={{
+        backgroundImage: "url('/lovable-uploads/e307c072-4ba0-4d75-b13c-12aef5f232df.png')",
+        zIndex: 0
+      }} />
         
         {/* Background Gradient Overlay - Much more transparent to show the image */}
-        <div className="absolute inset-0 bg-gradient-to-b from-zarsom-navy/20 to-zarsom-navy/20" style={{ zIndex: 1 }}></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-zarsom-navy/20 to-zarsom-navy/20" style={{
+        zIndex: 1
+      }}></div>
         
-        <div className="container mx-auto px-4 relative" style={{ zIndex: 2 }}>
+        <div className="container mx-auto px-4 relative" style={{
+        zIndex: 2
+      }}>
           <ScrollReveal>
             <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-12">
               Our Journey
@@ -264,8 +263,7 @@ const About = () => {
           </ScrollReveal>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
 interface TimelineItemProps {
   year: string;
@@ -279,8 +277,7 @@ const TimelineItem = ({
   description,
   isLeft
 }: TimelineItemProps) => {
-  return (
-    <div className={`flex items-center ${isLeft ? 'md:flex-row' : 'md:flex-row-reverse'} flex-col`}>
+  return <div className={`flex items-center ${isLeft ? 'md:flex-row' : 'md:flex-row-reverse'} flex-col`}>
       <div className={`md:w-1/2 w-full ${isLeft ? 'md:pr-12 md:text-right' : 'md:pl-12'} pb-10 md:pb-0`}>
         <div className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10 hover-lift">
           <div className="text-zarsom-teal font-bold text-xl mb-2">{year}</div>
@@ -292,8 +289,7 @@ const TimelineItem = ({
       <div className="md:w-0 w-px h-10 md:h-0 bg-zarsom-teal/50 md:hidden"></div>
       
       <div className="flex items-center justify-center w-10 h-10 rounded-full bg-zarsom-teal border-4 border-zarsom-navy absolute left-[-5px] md:left-1/2 md:transform md:translate-x-[-50%]"></div>
-    </div>
-  );
+    </div>;
 };
 interface MissionVisionCardProps {
   title: string;
@@ -306,18 +302,16 @@ const MissionVisionCard = ({
   bgClass
 }: MissionVisionCardProps) => {
   const [isFlipped, setIsFlipped] = useState(false);
-  return (
-    <div className="h-[300px] perspective-1000 cursor-pointer" onClick={() => setIsFlipped(!isFlipped)}>
+  return <div className="h-[300px] perspective-1000 cursor-pointer" onClick={() => setIsFlipped(!isFlipped)}>
       <div className={`relative w-full h-full transition-transform duration-700 transform-style-3d ${isFlipped ? 'rotate-y-180' : ''}`}>
         <div className={`absolute w-full h-full backface-hidden ${bgClass} rounded-xl p-8 flex items-center justify-center shadow-xl`}>
           <h3 className="text-3xl font-bold text-white">{title}</h3>
         </div>
         
-        <div className="absolute w-full h-full backface-hidden backdrop-blur-md rounded-xl p-8 flex items-center justify-center shadow-xl rotate-y-180 bg-cyan-950">
+        <div className="absolute w-full h-full backface-hidden backdrop-blur-md rounded-xl p-8 flex items-center justify-center shadow-xl rotate-y-180 bg-slate-900">
           <p className="text-xl text-white">{description}</p>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
 export default About;
