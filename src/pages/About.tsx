@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import ScrollReveal from "@/components/ScrollReveal";
 import ParallaxHero from "@/components/ParallaxHero";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+
 const About = () => {
   return <div className="min-h-screen pt-20">
       {/* Hero Section */}
@@ -181,8 +182,20 @@ const About = () => {
       </section>
       
       {/* Our Journey Timeline */}
-      <section className="py-20 bg-gradient-to-b from-zarsom-navy/70 to-zarsom-navy/60">
-        <div className="container mx-auto px-4">
+      <section className="py-20 relative">
+        {/* Background Image with Overlay */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-fixed opacity-20" 
+          style={{ 
+            backgroundImage: "url('/lovable-uploads/e307c072-4ba0-4d75-b13c-12aef5f232df.png')",
+            zIndex: 0
+          }}
+        />
+        
+        {/* Background Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-b from-zarsom-navy/70 to-zarsom-navy/60" style={{ zIndex: 1 }}></div>
+        
+        <div className="container mx-auto px-4 relative" style={{ zIndex: 2 }}>
           <ScrollReveal>
             <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-12">
               Our Journey
