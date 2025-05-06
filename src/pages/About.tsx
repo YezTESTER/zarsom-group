@@ -24,16 +24,7 @@ const About = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <ScrollReveal>
-              <div className="grid grid-cols-1 gap-6">
-                <div className="relative">
-                  <div className="absolute inset-0 bg-zarsom-teal/20 rounded-lg transform translate-x-3 translate-y-3"></div>
-                  <img src="/public/lovable-uploads/2a585d01-2819-4080-b2c7-8c8fc7b53cbb.png" alt="Azande Mchunu" className="rounded-lg shadow-xl relative z-10 w-full h-auto" />
-                </div>
-                <div className="relative">
-                  <div className="absolute inset-0 bg-zarsom-teal/20 rounded-lg transform translate-x-3 translate-y-3"></div>
-                  <img src="/public/lovable-uploads/afb00cd9-80ee-4f4f-bd2d-bad0558efde7.png" alt="Bathuthukile Mchunu" className="rounded-lg shadow-xl relative z-10 w-full h-auto" />
-                </div>
-              </div>
+              
             </ScrollReveal>
             
             <ScrollReveal delay={300}>
@@ -60,9 +51,7 @@ const About = () => {
       <section className="py-20 bg-gradient-to-b from-zarsom-navy/90 to-zarsom-navy/80">
         <div className="container mx-auto px-4">
           <ScrollReveal>
-            <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-12">
-              Our Founders
-            </h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-12">The Founders</h2>
           </ScrollReveal>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
