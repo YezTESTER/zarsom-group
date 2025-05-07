@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { Facebook, Linkedin, Instagram, Twitter } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -26,7 +25,7 @@ const Footer = () => {
             />
             <p className="text-gray-300 mb-4">Fueling Progress. Nourishing Communities.</p>
             <p className="text-gray-300 mb-4">
-              A <a href="http://www.whitepaperconcepts.com/" target="_blank" rel="noopener noreferrer" className="text-zarsom-teal hover:underline">White Paper Concepts</a> Design
+              A <a href="http://www.whitepaperconcepts.co.za/" target="_blank" rel="noopener noreferrer" className="text-zarsom-teal hover:underline">White Paper Concepts</a> Design
             </p>
             <div className="flex items-center space-x-2">
               <Button
