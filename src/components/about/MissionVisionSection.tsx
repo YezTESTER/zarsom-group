@@ -19,8 +19,8 @@ const MissionVisionCard = ({
           <h3 className="text-3xl font-bold text-white">{title}</h3>
         </div>
         
-        <div className="absolute w-full h-full backface-hidden backdrop-blur-md rounded-xl p-8 flex items-center justify-center shadow-xl rotate-y-180 bg-slate-50">
-          <p className="text-xl text-slate-900 text-center">{description}</p>
+        <div className="absolute w-full h-full backface-hidden backdrop-blur-md rounded-xl p-8 flex items-center justify-center shadow-xl rotate-y-180 bg-zarsom-teal">
+          <p className="text-xl text-center text-slate-50">{description}</p>
         </div>
       </div>
     </div>;
