@@ -6,8 +6,18 @@ import { Droplet, ShieldCheck, Home, Waves, ShoppingBag } from "lucide-react";
 
 const OverviewSection = () => {
   return (
-    <section className="py-20 bg-gradient-to-b from-zarsom-navy to-zarsom-navy/90">
-      <div className="container mx-auto px-4">
+    <section className="py-20 relative">
+      {/* Background Image with Overlay */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center" 
+        style={{
+          backgroundImage: "url('/lovable-uploads/56c39b0e-c4f1-4a01-9a97-5058d3223100.png')",
+          zIndex: 0
+        }} 
+      />
+      <div className="absolute inset-0 bg-zarsom-navy/85" style={{ zIndex: 1 }}></div>
+      
+      <div className="container mx-auto px-4 relative z-10">
         <ScrollReveal>
           <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-6">
             Overview

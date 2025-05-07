@@ -18,10 +18,13 @@ const TimelineItem = ({
   return (
     <div className={`flex items-center ${isLeft ? 'md:flex-row' : 'md:flex-row-reverse'} flex-col`}>
       <div className={`md:w-1/2 w-full ${isLeft ? 'md:pr-12 md:text-right' : 'md:pl-12'} pb-10 md:pb-0`}>
-        <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/10 hover-lift">
-          <div className="text-zarsom-teal font-bold text-xl mb-2">{year}</div>
-          <h3 className="text-xl font-semibold text-white mb-2">{title}</h3>
-          <p className="text-gray-300">{description}</p>
+        <div className="bg-gradient-to-br from-[#0EA5E9]/50 to-[#1A1F2C]/70 backdrop-blur-sm p-6 rounded-xl border border-white/10 hover-lift relative overflow-hidden">
+          <div className="absolute inset-0 bg-[url('/lovable-uploads/d3716b6f-c7cc-4162-a638-aecb894fb691.png')] bg-cover opacity-10"></div>
+          <div className="relative z-10">
+            <div className="text-zarsom-teal font-bold text-xl mb-2">{year}</div>
+            <h3 className="text-xl font-semibold text-white mb-2">{title}</h3>
+            <p className="text-gray-300">{description}</p>
+          </div>
         </div>
       </div>
       
