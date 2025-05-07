@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import ParallaxHero from "@/components/ParallaxHero";
 import CounterCard from "@/components/CounterCard";
 import ScrollReveal from "@/components/ScrollReveal";
+import { Card } from "@/components/ui/card";
 
 const Home = () => {
   return (
@@ -49,8 +50,12 @@ const Home = () => {
       </ParallaxHero>
       
       {/* ZARSOM Group Initiative */}
-      <section className="py-20 bg-gradient-to-b from-zarsom-navy to-zarsom-navy/90 bg-transparent">
-        <div className="container mx-auto px-4">
+      <section 
+        className="py-20 relative bg-cover bg-center"
+        style={{ backgroundImage: "url('/lovable-uploads/56c39b0e-c4f1-4a01-9a97-5058d3223100.png')" }}
+      >
+        <div className="absolute inset-0 bg-zarsom-navy/85"></div>
+        <div className="container mx-auto px-4 relative z-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <ScrollReveal>
               <div>
@@ -94,43 +99,55 @@ const Home = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <ScrollReveal delay={100}>
-              <div className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10 text-center hover-lift">
-                <div className="inline-block p-4 bg-zarsom-teal/20 rounded-full mb-4">
-                  <Truck className="h-10 w-10 text-zarsom-teal animate-pulse" />
+              <Card className="bg-gradient-to-br from-[#0EA5E9]/50 to-[#1A1F2C]/70 backdrop-blur-sm border-white/10 p-6 rounded-xl text-center hover-lift shadow-lg shadow-blue-900/20 overflow-hidden relative">
+                <div className="absolute inset-0 bg-[url('/lovable-uploads/d3716b6f-c7cc-4162-a638-aecb894fb691.png')] bg-cover opacity-10"></div>
+                <div className="relative z-10">
+                  <div className="inline-block p-4 bg-zarsom-teal/20 rounded-full mb-4">
+                    <Truck className="h-10 w-10 text-zarsom-teal animate-pulse" />
+                  </div>
+                  <h3 className="text-2xl font-bold text-white mb-2">360+</h3>
+                  <p className="text-gray-300">Trucks Daily through Umkomaas</p>
                 </div>
-                <h3 className="text-2xl font-bold text-white mb-2">360+</h3>
-                <p className="text-gray-300">Trucks Daily through Umkomaas</p>
-              </div>
+              </Card>
             </ScrollReveal>
             
             <ScrollReveal delay={200}>
-              <div className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10 text-center hover-lift">
-                <div className="inline-block p-4 bg-zarsom-teal/20 rounded-full mb-4">
-                  <Users className="h-10 w-10 text-zarsom-teal animate-pulse" />
+              <Card className="bg-gradient-to-br from-[#0EA5E9]/50 to-[#1A1F2C]/70 backdrop-blur-sm border-white/10 p-6 rounded-xl text-center hover-lift shadow-lg shadow-blue-900/20 overflow-hidden relative">
+                <div className="absolute inset-0 bg-[url('/lovable-uploads/d3716b6f-c7cc-4162-a638-aecb894fb691.png')] bg-cover opacity-10"></div>
+                <div className="relative z-10">
+                  <div className="inline-block p-4 bg-zarsom-teal/20 rounded-full mb-4">
+                    <Users className="h-10 w-10 text-zarsom-teal animate-pulse" />
+                  </div>
+                  <h3 className="text-2xl font-bold text-white mb-2">70+</h3>
+                  <p className="text-gray-300">Jobs Created in Phase 1</p>
                 </div>
-                <h3 className="text-2xl font-bold text-white mb-2">70+</h3>
-                <p className="text-gray-300">Jobs Created in Phase 1</p>
-              </div>
+              </Card>
             </ScrollReveal>
             
             <ScrollReveal delay={300}>
-              <div className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10 text-center hover-lift">
-                <div className="inline-block p-4 bg-zarsom-teal/20 rounded-full mb-4">
-                  <Map className="h-10 w-10 text-zarsom-teal animate-pulse" />
+              <Card className="bg-gradient-to-br from-[#0EA5E9]/50 to-[#1A1F2C]/70 backdrop-blur-sm border-white/10 p-6 rounded-xl text-center hover-lift shadow-lg shadow-blue-900/20 overflow-hidden relative">
+                <div className="absolute inset-0 bg-[url('/lovable-uploads/d3716b6f-c7cc-4162-a638-aecb894fb691.png')] bg-cover opacity-10"></div>
+                <div className="relative z-10">
+                  <div className="inline-block p-4 bg-zarsom-teal/20 rounded-full mb-4">
+                    <Map className="h-10 w-10 text-zarsom-teal animate-pulse" />
+                  </div>
+                  <h3 className="text-2xl font-bold text-white mb-2">3.4–5</h3>
+                  <p className="text-gray-300">Hectares of Prime Land Secured</p>
                 </div>
-                <h3 className="text-2xl font-bold text-white mb-2">3.4–5</h3>
-                <p className="text-gray-300">Hectares of Prime Land Secured</p>
-              </div>
+              </Card>
             </ScrollReveal>
             
             <ScrollReveal delay={400}>
-              <div className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10 text-center hover-lift">
-                <div className="inline-block p-4 bg-zarsom-teal/20 rounded-full mb-4">
-                  <TrendingUp className="h-10 w-10 text-zarsom-teal animate-pulse" />
+              <Card className="bg-gradient-to-br from-[#0EA5E9]/50 to-[#1A1F2C]/70 backdrop-blur-sm border-white/10 p-6 rounded-xl text-center hover-lift shadow-lg shadow-blue-900/20 overflow-hidden relative">
+                <div className="absolute inset-0 bg-[url('/lovable-uploads/d3716b6f-c7cc-4162-a638-aecb894fb691.png')] bg-cover opacity-10"></div>
+                <div className="relative z-10">
+                  <div className="inline-block p-4 bg-zarsom-teal/20 rounded-full mb-4">
+                    <TrendingUp className="h-10 w-10 text-zarsom-teal animate-pulse" />
+                  </div>
+                  <h3 className="text-2xl font-bold text-white mb-2">Billion-Rand</h3>
+                  <p className="text-gray-300">Potential Project Lifecycle</p>
                 </div>
-                <h3 className="text-2xl font-bold text-white mb-2">Billion-Rand</h3>
-                <p className="text-gray-300">Potential Project Lifecycle</p>
-              </div>
+              </Card>
             </ScrollReveal>
           </div>
         </div>
