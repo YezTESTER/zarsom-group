@@ -42,16 +42,14 @@ const JourneySection = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-fixed" 
         style={{
-          backgroundImage: "url('/lovable-uploads/e307c072-4ba0-4d75-b13c-12aef5f232df.png')",
+          backgroundImage: "url('/lovable-uploads/60e48ba6-3dff-4956-bb83-6a1f2754d864.png')",
           zIndex: 0
         }} 
       />
+      <div className="absolute inset-0 bg-zarsom-navy/85" style={{ zIndex: 1 }}></div>
       
       <div 
-        className="container mx-auto px-4 relative" 
-        style={{
-          zIndex: 2
-        }}
+        className="container mx-auto px-4 relative z-10" 
       >
         <ScrollReveal>
           <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-12">
