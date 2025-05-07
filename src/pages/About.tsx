@@ -1,3 +1,4 @@
+
 import { useRef, useEffect, useState } from "react";
 import { Calendar, Award, Star, RotateCw, TrendingUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -189,10 +190,10 @@ const About = () => {
         zIndex: 0
       }} />
         
-        {/* Background Gradient Overlay - Much more transparent to show the image */}
+        {/* Background Gradient Overlay - Completely transparent to show the image */}
         <div style={{
         zIndex: 1
-      }} className="absolute inset-0 bg-gradient-to-b from-zarsom- bg-transparent px-0 py-0"></div>
+      }} className="absolute inset-0 bg-transparent"></div>
         
         <div className="container mx-auto px-4 relative" style={{
         zIndex: 2
@@ -205,7 +206,7 @@ const About = () => {
           
           <div className="relative">
             {/* Timeline Line */}
-            <div className="absolute left-0 md:left-1/2 transform md:translate-x-[-50%] top-0 bottom-0 w-1 bg-zarsom-teal/50"></div>
+            <div className="absolute left-0 md:left-1/2 transform md:translate-x-[-50%] top-0 bottom-0 w-1 bg-zarsom-teal/70"></div>
             
             {/* Timeline Items */}
             <div className="space-y-12">
@@ -279,7 +280,7 @@ const TimelineItem = ({
 }: TimelineItemProps) => {
   return <div className={`flex items-center ${isLeft ? 'md:flex-row' : 'md:flex-row-reverse'} flex-col`}>
       <div className={`md:w-1/2 w-full ${isLeft ? 'md:pr-12 md:text-right' : 'md:pl-12'} pb-10 md:pb-0`}>
-        <div className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10 hover-lift">
+        <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/10 hover-lift">
           <div className="text-zarsom-teal font-bold text-xl mb-2">{year}</div>
           <h3 className="text-xl font-semibold text-white mb-2">{title}</h3>
           <p className="text-gray-300">{description}</p>

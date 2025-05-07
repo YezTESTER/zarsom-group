@@ -37,17 +37,19 @@ const ParallaxHero = ({
       className={`relative overflow-hidden ${height} flex items-center justify-center`}
     >
       <div
-        className="absolute inset-0 w-full h-full bg-cover bg-center"
+        className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage: `url(${imageSrc})`,
           transform: `translateY(${offsetY * 0.5}px)`,
           backgroundPosition: "center",
-          willChange: "transform"
+          willChange: "transform",
+          zIndex: 0
         }}
       />
       <div
         style={{
-          opacity: overlayOpacity
+          opacity: overlayOpacity,
+          zIndex: 1
         }}
         className="absolute inset-0 w-full h-full bg-[#070127]/[0.81]"
       />
