@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { ChevronRight, Truck, Users, Map, TrendingUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -6,30 +5,22 @@ import ParallaxHero from "@/components/ParallaxHero";
 import CounterCard from "@/components/CounterCard";
 import ScrollReveal from "@/components/ScrollReveal";
 import { Card } from "@/components/ui/card";
-
 const Home = () => {
-  return (
-    <div className="min-h-screen">
+  return <div className="min-h-screen">
       {/* Hero Section */}
       <ParallaxHero imageSrc="/lovable-uploads/fd2a7bba-69de-44f3-8187-d3450202933e.png">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 animate-fade-in">
             Fueling Progress. <span className="text-zarsom-teal">Nourishing Communities.</span>
           </h1>
-          <p
-            className="text-xl text-gray-200 mb-8 animate-fade-in"
-            style={{
-              animationDelay: "300ms"
-            }}
-          >
+          <p className="text-xl text-gray-200 mb-8 animate-fade-in" style={{
+          animationDelay: "300ms"
+        }}>
             Discover ZARFUEL, a next-generation truck stop by ZARSOM Group—designed to power South Africa's freight backbone and uplift local communities.
           </p>
-          <div
-            className="flex flex-wrap justify-center gap-4 animate-fade-in"
-            style={{
-              animationDelay: "600ms"
-            }}
-          >
+          <div className="flex flex-wrap justify-center gap-4 animate-fade-in" style={{
+          animationDelay: "600ms"
+        }}>
             <Link to="/zarfuel">
               <Button className="hero-button bg-zarsom-teal text-white hover:bg-zarsom-teal/80">
                 Learn About ZARFUEL <ChevronRight className="ml-2 h-4 w-4" />
@@ -50,10 +41,9 @@ const Home = () => {
       </ParallaxHero>
       
       {/* ZARSOM Group Initiative */}
-      <section 
-        className="py-20 relative bg-cover bg-center"
-        style={{ backgroundImage: "url('/lovable-uploads/56c39b0e-c4f1-4a01-9a97-5058d3223100.png')" }}
-      >
+      <section className="py-20 relative bg-cover bg-center" style={{
+      backgroundImage: "url('/lovable-uploads/56c39b0e-c4f1-4a01-9a97-5058d3223100.png')"
+    }}>
         <div className="absolute inset-0 bg-zarsom-navy/85"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -89,7 +79,7 @@ const Home = () => {
       </section>
       
       {/* Key Highlights */}
-      <section className="bg-gradient-to-b from-zarsom-navy/90 to-zarsom-navy/80 py-[28px] bg-cyan-950">
+      <section className="bg-gradient-to-b from-zarsom-navy/90 to-zarsom-navy/80 py-[50px] bg-transparent">
         <div className="container mx-auto px-4">
           <ScrollReveal>
             <h2 className="text-3xl font-bold text-white text-center mb-12 md:text-5xl">
@@ -166,7 +156,7 @@ const Home = () => {
       </section>
       
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-b from-zarsom-navy/80 to-zarsom-navy bg-yellow-600">
+      <section className="py-20 bg-gradient-to-b from-zarsom-navy/80 to-zarsom-navy bg-indigo-900">
         <div className="container mx-auto px-4 text-center">
           <ScrollReveal>
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
@@ -190,8 +180,6 @@ const Home = () => {
           </ScrollReveal>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default Home;
