@@ -10,7 +10,8 @@ const Footer = () => {
     { name: "ZARFUEL", path: "/zarfuel" },
     { name: "News", path: "/news" },
     { name: "Careers", path: "/careers" },
-    { name: "Contact", path: "/contact" }
+    { name: "Contact", path: "/contact" },
+    { name: "Terms of Use", path: "/terms" }
   ];
 
   return (
@@ -24,6 +25,9 @@ const Footer = () => {
               src="/lovable-uploads/8968f7bd-c9f7-4537-aa72-c9a93c3a2b33.png"
             />
             <p className="text-gray-300 mb-4">Fueling Progress. Nourishing Communities.</p>
+            <p className="text-gray-300 mb-4">
+              A <a href="http://www.whitepaperconcepts.com/" target="_blank" rel="noopener noreferrer" className="text-zarsom-teal hover:underline">White Paper Concepts</a> Design
+            </p>
             <div className="flex items-center space-x-2">
               <Button
                 variant="outline"

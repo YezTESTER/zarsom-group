@@ -13,6 +13,7 @@ import Zarfuel from "./pages/Zarfuel";
 import News from "./pages/News";
 import Careers from "./pages/Careers";
 import Contact from "./pages/Contact";
+import Terms from "./pages/Terms";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -32,6 +33,7 @@ const App = () => (
             <Route path="/news" element={<News />} />
             <Route path="/careers" element={<Careers />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/terms" element={<Terms />} />
             {/* Additional routes to be added later */}
             <Route path="*" element={<NotFound />} />
           </Routes>
