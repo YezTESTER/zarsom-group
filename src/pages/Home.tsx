@@ -49,20 +49,20 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <ScrollReveal>
               <div>
-                <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+                <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 px-[28px]">
                   ZARSOM Group's Initiative & Flagship Project
                 </h2>
                 <div className="text-gray-300 space-y-4">
-                  <p className="px-[2px] my-0">
+                  <p className="my-0 px-[27px]">
                     ZARFUEL is a multi-million-rand, state-of-the-art truck stop initiative built on 3.4 – 5 ha of prime N2 land at Umkomaas, delivered through a landmark partnership with SAPPI Saiccor in 2025. Slated to serve 360+ trucks daily and create 70+ permanent jobs, it combines:
                   </p>
-                  <ul className="list-disc pl-5 space-y-2">
+                  <ul className="list-disc pl-5 space-y-2 px-[45px]">
                     <li>High-speed fuel services</li>
                     <li>Secure parking (100+ bays)</li>
                     <li>Driver amenities (showers, lounges, truck wash)</li>
                     <li className="rounded-none">Future retail & warehousing</li>
                   </ul>
-                  <p>
+                  <p className="px-[27px]">
                     Founded by sisters Azande and Bathuthukile Mchunu—two black female entrepreneurs who overcame adversity to spearhead this venture—ZARFUEL exemplifies ZARSOM Group's commitment to regional growth. With truck stops powering 80% of South African freight and the logistics sector contributing ~6.5% of GDP, ZARFUEL aims to capture this opportunity, enhance road safety, and stimulate local commerce over the coming years.
                   </p>
                 </div>
