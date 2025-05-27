@@ -20,7 +20,7 @@ const FoundersSection = () => {
               <div className="relative z-10">
                 <div className="flex items-start gap-4 mb-4">
                   <Avatar className="h-20 w-20 border-2 border-zarsom-teal">
-                    <AvatarImage src="/public/lovable-uploads/0d4fdd2d-1279-4df3-99fa-9191ecdab99c.png" alt="Bathuthukile Mchunu" />
+                    <AvatarImage src="/lovable-uploads/0d4fdd2d-1279-4df3-99fa-9191ecdab99c.png" alt="Bathuthukile Mchunu" />
                     <AvatarFallback>BM</AvatarFallback>
                   </Avatar>
                   <h3 className="text-2xl font-bold text-white">Bathuthukile Mchunu • Co-Founder & CEO</h3>
@@ -40,7 +40,7 @@ const FoundersSection = () => {
               <div className="relative z-10">
                 <div className="flex items-start gap-4 mb-4">
                   <Avatar className="h-20 w-20 border-2 border-zarsom-teal">
-                    <AvatarImage src="/public/lovable-uploads/e3c665d7-bff3-480b-9cb8-f30ed0558799.png" alt="Azande Mchunu" />
+                    <AvatarImage src="/lovable-uploads/e3c665d7-bff3-480b-9cb8-f30ed0558799.png" alt="Azande Mchunu" />
                     <AvatarFallback>AM</AvatarFallback>
                   </Avatar>
                   <h3 className="text-2xl font-bold text-white">Azande Mchunu • Co-Founder & Director</h3>
