@@ -12,7 +12,7 @@ const About = () => {
     <div className="min-h-screen pt-20">
       {/* Hero Section */}
       <ParallaxHero 
-        imageSrc="/public/lovable-uploads/6b626058-2a08-4161-8f11-754bda7f0cbd.png" 
+        imageSrc="/lovable-uploads/6b626058-2a08-4161-8f11-754bda7f0cbd.png" 
         height="h-[60vh]"
       >
         <div className="max-w-4xl mx-auto text-center">
