@@ -51,7 +51,7 @@ const ParallaxHero = ({
           opacity: overlayOpacity,
           zIndex: 1
         }}
-        className="absolute inset-0 w-full h-full bg-black/50"
+        className="absolute inset-0 w-full h-full bg-black/40"
       />
       <div className="relative z-10 container mx-auto px-4">{children}</div>
     </div>
