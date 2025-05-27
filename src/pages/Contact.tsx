@@ -30,7 +30,7 @@ const Contact = () => {
     <div className="min-h-screen pt-20">
       {/* Hero Section */}
       <ParallaxHero 
-        imageSrc="/public/lovable-uploads/c928a41d-5cbc-48bb-ada7-8a543056f2dc.png"
+        imageSrc="/lovable-uploads/c928a41d-5cbc-48bb-ada7-8a543056f2dc.png"
         height="h-[40vh]"
       >
         <div className="max-w-4xl mx-auto text-center">
