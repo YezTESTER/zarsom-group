@@ -16,7 +16,7 @@ const ImpactSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <CounterCard 
             title="Permanent Jobs Created" 
-            value={70} 
+            value={40} 
             suffix="+" 
             delayMs={0} 
           />
