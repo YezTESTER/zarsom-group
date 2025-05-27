@@ -7,9 +7,9 @@ const VisionSection = () => {
       backgroundImage: "url('/lovable-uploads/958b10f8-676c-48a0-8766-26b6b07faef4.png')",
       zIndex: 0
     }} />
-      <div className="absolute inset-0 bg-zarsom-navy/85" style={{
+      <div style={{
       zIndex: 1
-    }}></div>
+    }} className="absolute inset-0 bg-[#141428]/[0.93]"></div>
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
