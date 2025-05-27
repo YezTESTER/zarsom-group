@@ -4,7 +4,7 @@ const VisionSection = () => {
   return <section className="py-20 relative">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 bg-cover bg-center" style={{
-      backgroundImage: "url('/lovable-uploads/56c39b0e-c4f1-4a01-9a97-5058d3223100.png')",
+      backgroundImage: "url('/lovable-uploads/958b10f8-676c-48a0-8766-26b6b07faef4.png')",
       zIndex: 0
     }} />
       <div className="absolute inset-0 bg-zarsom-navy/85" style={{
