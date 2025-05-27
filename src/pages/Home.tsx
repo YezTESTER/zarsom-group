@@ -54,11 +54,11 @@ const Home = () => {
                 </h2>
                 <div className="text-gray-300 space-y-4">
                   <p className="my-0 px-[27px]">
-                    ZARFUEL is a multi-million-rand, state-of-the-art truck stop initiative built on 3.4 – 5 ha of prime N2 land at Umkomaas, delivered through a landmark partnership with SAPPI Saiccor in 2025. Slated to serve 360+ trucks daily and create 70+ permanent jobs, it combines:
+                    ZARFUEL is a multi-million-rand, state-of-the-art truck stop initiative built on 3.4 – 5 ha of prime N2 land at Umkomaas, delivered through a landmark partnership with SAPPI Saiccor in 2025. Slated to serve 360+ trucks daily and create 40+ permanent jobs, it combines:
                   </p>
                   <ul className="list-disc pl-5 space-y-2 px-[45px]">
                     <li>High-speed fuel services</li>
-                    <li>Secure parking (100+ bays)</li>
+                    <li>Secure parking (50+ bays)</li>
                     <li>Driver amenities (showers, lounges, truck wash)</li>
                     <li className="rounded-none">Future retail & warehousing</li>
                   </ul>
@@ -108,7 +108,7 @@ const Home = () => {
                   <div className="inline-block p-4 bg-zarsom-teal/20 rounded-full mb-4">
                     <Users className="h-10 w-10 text-zarsom-teal animate-pulse" />
                   </div>
-                  <h3 className="text-2xl font-bold text-white mb-2">70+</h3>
+                  <h3 className="text-2xl font-bold text-white mb-2">40+</h3>
                   <p className="text-gray-300">Jobs Created in Phase 1</p>
                 </div>
               </Card>
