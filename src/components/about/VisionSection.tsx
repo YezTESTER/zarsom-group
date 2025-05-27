@@ -15,7 +15,7 @@ const VisionSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <ScrollReveal>
             <div className="rounded-xl overflow-hidden shadow-xl">
-              <img alt="ZARSOM Truck on Highway" src="/lovable-uploads/958b10f8-676c-48a0-8766-26b6b07faef4.jpg" className="w-full h-auto rounded-xl transform hover:scale-105 transition-transform duration-500 object-scale-down" />
+              <img alt="ZARSOM Truck on Highway" className="w-full h-auto rounded-xl transform hover:scale-105 transition-transform duration-500 object-scale-down" src="/lovable-uploads/96c1eda2-03e6-4b40-99a6-b808d90aa4fa.png" />
             </div>
           </ScrollReveal>
           
