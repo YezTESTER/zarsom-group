@@ -19,7 +19,7 @@ const MissionVisionCard = ({
           <h3 className="text-3xl font-bold text-white">{title}</h3>
         </div>
         
-        <div className="absolute w-full h-full backface-hidden backdrop-blur-md rounded-xl p-8 flex items-center justify-center shadow-xl rotate-y-180 bg-zarsom-teal">
+        <div className="absolute w-full h-full backface-hidden backdrop-blur-md rounded-xl p-8 flex items-center justify-center shadow-xl rotate-y-180 bg-zarsom-navy">
           <p className="text-xl text-center text-slate-50">{description}</p>
         </div>
       </div>
@@ -27,9 +27,9 @@ const MissionVisionCard = ({
 };
 const MissionVisionSection = () => {
   return <section className="bg-gradient-to-b from-zarsom-navy/60 to-zarsom-navy bg-slate-950 py-0">
-      <div className="container mx-auto px-4 bg-zarsom-navy">
+      <div className="container mx-auto px-4 bg-slate-50">
         <ScrollReveal>
-          <h2 className="text-3xl font-bold text-center mb-12 py-[23px] text-zinc-50 md:text-5xl">
+          <h2 className="text-3xl font-bold text-center mb-12 py-[23px] text-zarsom-navy md:text-5xl">
             Mission & Vision
           </h2>
         </ScrollReveal>
@@ -47,7 +47,7 @@ const MissionVisionSection = () => {
         <ScrollReveal delay={600}>
           <div className="mt-16 text-center">
             <Link to="/zarfuel">
-              <Button className="hero-button bg-zarsom-teal text-white hover:bg-zarsom-teal/80">
+              <Button className="hero-button text-white bg-zarsom-teal">
                 Explore ZARFUEL Project
               </Button>
             </Link>
