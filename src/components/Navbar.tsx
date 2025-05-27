@@ -1,10 +1,11 @@
 
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,6 +25,8 @@ const Navbar = () => {
     { name: "Careers", path: "/careers" },
     { name: "Contact", path: "/contact" }
   ];
+
+  const isActive = (path: string) => location.pathname === path;
 
   return (
     <nav
@@ -49,7 +52,11 @@ const Navbar = () => {
                 <Link
                   key={item.name}
                   to={item.path}
-                  className="text-white hover:text-zarsom-teal px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                  className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+                    isActive(item.path)
+                      ? "text-zarsom-teal bg-white/10 font-semibold"
+                      : "text-white hover:text-zarsom-teal"
+                  }`}
                 >
                   {item.name}
                 </Link>
@@ -104,7 +111,11 @@ const Navbar = () => {
             <Link
               key={item.name}
               to={item.path}
-              className="text-white hover:text-zarsom-teal block px-3 py-2 rounded-md text-base font-medium"
+              className={`block px-3 py-2 rounded-md text-base font-medium ${
+                isActive(item.path)
+                  ? "text-zarsom-teal bg-white/10 font-semibold"
+                  : "text-white hover:text-zarsom-teal"
+              }`}
               onClick={() => setMobileMenuOpen(false)}
             >
               {item.name}
