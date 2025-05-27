@@ -38,7 +38,7 @@ const OverviewSection = () => {
           <AnimatedFeature 
             icon={<ShieldCheck className="h-12 w-12" />}
             title="Secure Parking"
-            description="100+ truck bays under 24/7 monitoring and security."
+            description="40+ truck bays under 24/7 monitoring and security."
             delay={200}
           />
           
