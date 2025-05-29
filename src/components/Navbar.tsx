@@ -23,7 +23,8 @@ const Navbar = () => {
     { name: "ZARFUEL", path: "/zarfuel" },
     { name: "News", path: "/news" },
     { name: "Careers", path: "/careers" },
-    { name: "Contact", path: "/contact" }
+    { name: "Contact", path: "/contact" },
+    { name: "Login", path: "https://dashboard.zarsomgroup.co.za", external: true }
   ];
 
   const isActive = (path: string) => location.pathname === path;
@@ -49,17 +50,29 @@ const Navbar = () => {
           <div className="hidden md:block">
             <div className="ml-10 flex items-center space-x-4">
               {navItems.map((item) => (
-                <Link
-                  key={item.name}
-                  to={item.path}
-                  className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
-                    isActive(item.path)
-                      ? "text-zarsom-teal bg-white/10 font-semibold"
-                      : "text-white hover:text-zarsom-teal"
-                  }`}
-                >
-                  {item.name}
-                </Link>
+                item.external ? (
+                  <a
+                    key={item.name}
+                    href={item.path}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-3 py-2 rounded-md text-sm font-medium transition-colors text-white hover:text-zarsom-teal"
+                  >
+                    {item.name}
+                  </a>
+                ) : (
+                  <Link
+                    key={item.name}
+                    to={item.path}
+                    className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+                      isActive(item.path)
+                        ? "text-zarsom-teal bg-white/10 font-semibold"
+                        : "text-white hover:text-zarsom-teal"
+                    }`}
+                  >
+                    {item.name}
+                  </Link>
+                )
               ))}
             </div>
           </div>
@@ -108,18 +121,31 @@ const Navbar = () => {
       <div className={`${mobileMenuOpen ? "block" : "hidden"} md:hidden bg-zarsom-navy`}>
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
           {navItems.map((item) => (
-            <Link
-              key={item.name}
-              to={item.path}
-              className={`block px-3 py-2 rounded-md text-base font-medium ${
-                isActive(item.path)
-                  ? "text-zarsom-teal bg-white/10 font-semibold"
-                  : "text-white hover:text-zarsom-teal"
-              }`}
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              {item.name}
-            </Link>
+            item.external ? (
+              <a
+                key={item.name}
+                href={item.path}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-zarsom-teal"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                {item.name}
+              </a>
+            ) : (
+              <Link
+                key={item.name}
+                to={item.path}
+                className={`block px-3 py-2 rounded-md text-base font-medium ${
+                  isActive(item.path)
+                    ? "text-zarsom-teal bg-white/10 font-semibold"
+                    : "text-white hover:text-zarsom-teal"
+                }`}
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                {item.name}
+              </Link>
+            )
           ))}
         </div>
       </div>

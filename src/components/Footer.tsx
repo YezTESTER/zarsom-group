@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import { Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -10,7 +11,8 @@ const Footer = () => {
     { name: "News", path: "/news" },
     { name: "Careers", path: "/careers" },
     { name: "Contact", path: "/contact" },
-    { name: "Terms of Use", path: "/terms" }
+    { name: "Terms of Use", path: "/terms" },
+    { name: "Login", path: "https://dashboard.zarsomgroup.co.za", external: true }
   ];
 
   return (
@@ -49,13 +51,25 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
               {navLinks.map((link) => (
-                <Link
-                  key={link.name}
-                  to={link.path}
-                  className="text-gray-300 hover:text-zarsom-teal transition-colors"
-                >
-                  {link.name}
-                </Link>
+                link.external ? (
+                  <a
+                    key={link.name}
+                    href={link.path}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-300 hover:text-zarsom-teal transition-colors"
+                  >
+                    {link.name}
+                  </a>
+                ) : (
+                  <Link
+                    key={link.name}
+                    to={link.path}
+                    className="text-gray-300 hover:text-zarsom-teal transition-colors"
+                  >
+                    {link.name}
+                  </Link>
+                )
               ))}
             </div>
           </div>
