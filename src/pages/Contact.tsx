@@ -1,11 +1,13 @@
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { MapPin, Phone, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import ScrollReveal from "@/components/ScrollReveal";
 import ParallaxHero from "@/components/ParallaxHero";
+import { toast } from "@/hooks/use-toast";
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -13,6 +15,8 @@ const Contact = () => {
     email: "",
     message: ""
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const form = useRef<HTMLFormElement>(null);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -21,9 +25,35 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
-    // Here you would typically send the data to your backend
-    setFormData({ name: "", email: "", message: "" });
+    setIsSubmitting(true);
+
+    if (form.current) {
+      emailjs
+        .sendForm('service_p1it9qu', 'template_hkh4gzn', form.current, {
+          publicKey: 'YOUR_PUBLIC_KEY', // You'll need to replace this with your actual public key
+        })
+        .then(
+          () => {
+            console.log('SUCCESS!');
+            toast({
+              title: "Message Sent!",
+              description: "Thank you for your message. We'll get back to you soon.",
+            });
+            setFormData({ name: "", email: "", message: "" });
+          },
+          (error) => {
+            console.log('FAILED...', error.text);
+            toast({
+              title: "Failed to Send",
+              description: "There was an error sending your message. Please try again.",
+              variant: "destructive",
+            });
+          },
+        )
+        .finally(() => {
+          setIsSubmitting(false);
+        });
+    }
   };
 
   return (
@@ -85,7 +115,7 @@ const Contact = () => {
                 </div>
                 
                 <div className="mt-8">
-                  <form onSubmit={handleSubmit} className="space-y-4">
+                  <form ref={form} onSubmit={handleSubmit} className="space-y-4">
                     <Input
                       type="text"
                       name="name"
@@ -115,8 +145,12 @@ const Contact = () => {
                       required
                     />
                     
-                    <Button type="submit" className="bg-zarsom-teal text-white hover:bg-zarsom-teal/80 w-full">
-                      Send Message
+                    <Button 
+                      type="submit" 
+                      className="bg-zarsom-teal text-white hover:bg-zarsom-teal/80 w-full"
+                      disabled={isSubmitting}
+                    >
+                      {isSubmitting ? "Sending..." : "Send Message"}
                     </Button>
                   </form>
                 </div>
