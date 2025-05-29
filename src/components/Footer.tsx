@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Facebook, Linkedin, Instagram, Twitter } from "lucide-react";
+import { Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Footer = () => {
@@ -32,29 +32,15 @@ const Footer = () => {
                 variant="outline"
                 size="icon"
                 className="rounded-full border-zarsom-teal text-zarsom-teal hover:bg-zarsom-teal hover:text-white"
+                asChild
               >
-                <Facebook className="h-4 w-4" />
-              </Button>
-              <Button
-                variant="outline"
-                size="icon"
-                className="rounded-full border-zarsom-teal text-zarsom-teal hover:bg-zarsom-teal hover:text-white"
-              >
-                <Linkedin className="h-4 w-4" />
-              </Button>
-              <Button
-                variant="outline"
-                size="icon"
-                className="rounded-full border-zarsom-teal text-zarsom-teal hover:bg-zarsom-teal hover:text-white"
-              >
-                <Instagram className="h-4 w-4" />
-              </Button>
-              <Button
-                variant="outline"
-                size="icon"
-                className="rounded-full border-zarsom-teal text-zarsom-teal hover:bg-zarsom-teal hover:text-white"
-              >
-                <Twitter className="h-4 w-4" />
+                <a
+                  href="https://www.linkedin.com/company/zarsom-group"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Linkedin className="h-4 w-4" />
+                </a>
               </Button>
             </div>
           </div>
