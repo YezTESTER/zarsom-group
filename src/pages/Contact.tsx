@@ -30,7 +30,7 @@ const Contact = () => {
     if (form.current) {
       emailjs
         .sendForm('service_p1it9qu', 'template_hkh4gzn', form.current, {
-          publicKey: 'YOUR_PUBLIC_KEY', // Replace this with your actual EmailJS public key
+          publicKey: 'VcjR2xoaxQTuSrak6',
         })
         .then(
           () => {
