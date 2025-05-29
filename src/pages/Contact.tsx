@@ -28,6 +28,21 @@ const Contact = () => {
     setIsSubmitting(true);
 
     if (form.current) {
+      // Add current timestamp to the form
+      const timeInput = document.createElement('input');
+      timeInput.type = 'hidden';
+      timeInput.name = 'time';
+      timeInput.value = new Date().toLocaleString('en-ZA', {
+        timeZone: 'Africa/Johannesburg',
+        year: 'numeric',
+        month: '2-digit',
+        day: '2-digit',
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit'
+      });
+      form.current.appendChild(timeInput);
+
       emailjs
         .sendForm('service_p1it9qu', 'template_hkh4gzn', form.current, {
           publicKey: 'VcjR2xoaxQTuSrak6',
@@ -51,6 +66,10 @@ const Contact = () => {
           },
         )
         .finally(() => {
+          // Remove the temporary time input
+          if (timeInput.parentNode) {
+            timeInput.parentNode.removeChild(timeInput);
+          }
           setIsSubmitting(false);
         });
     }
